@@ -13,3 +13,7 @@ add_executable(${PROJECT_NAME} ${SOURCES})
 # bgfx.cmake
 add_subdirectory(lib/bgfx.cmake)
 target_link_libraries(${PROJECT_NAME} bgfx bimg bx)
+
+# GLFW
+add_subdirectory(lib/glfw)
+target_link_libraries(${PROJECT_NAME} glfw)
